@@ -1,4 +1,4 @@
-## Plant-Desease-Detection-Using-AI
+# Plant-Desease-Detection-Using-AI
 
 import os
 import numpy as np
@@ -32,7 +32,7 @@ for directory in os.listdir(path):
         xlist.append(input_img_re)
         ylist.append(label)
 
-## Convolution Neural Networks (CNN)
+# Convolution Neural Networks (CNN)
 
 classifier.add(Conv2D(64,(3,3),input_shape=(224,224,3),activation ="relu",padding='same'))
 classifier.add(MaxPooling2D(pool_size=(2,2)))
@@ -64,7 +64,7 @@ hist=classifier.fit(x_train,y_train,batch_size=10,epochs=40,verbose=1,validation
 classifier.save("model3.h5")
 classifier.load_weights("model3.h5")
 
-##  Graph Visualization
+#  Graph Visualization
 
 train_loss=hist.history['loss']
 val_loss=hist.history['val_loss']
@@ -81,7 +81,7 @@ plt.grid(True)
 plt.legend(['Train','val'])
 plt.style.use(['classic'])
 
-## Results
+# Results
 
 plt.figure(1,figsize=(7,5))
 plt.plot(xc,train_acc)
