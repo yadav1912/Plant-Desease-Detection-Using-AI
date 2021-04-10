@@ -1,5 +1,4 @@
 # Plant-Desease-Detection-Using-AI
-
 import os
 import numpy as np
 import pandas as pd
