@@ -91,3 +91,4 @@ plt.title("Train loss vs val loss")
 plt.grid(True)
 plt.legend(['Train','val'],loc=4)
 plt.style.use(['classic'])
+
