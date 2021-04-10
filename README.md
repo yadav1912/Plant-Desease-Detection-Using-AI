@@ -64,7 +64,7 @@ hist=classifier.fit(x_train,y_train,batch_size=10,epochs=40,verbose=1,validation
 classifier.save("model3.h5")
 classifier.load_weights("model3.h5")
 
-#  Graph Visualization
+# Graph Visualization
 
 train_loss=hist.history['loss']
 val_loss=hist.history['val_loss']
